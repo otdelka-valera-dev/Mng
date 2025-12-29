@@ -1,0 +1,182 @@
+<html>
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+<style>
+html,body{
+    background: #2d2d31;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .v{
+    position: fixed;
+    background: #29292b;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 10vh;
+    z-index: 11;
+  }
+  .l{
+    position: fixed;
+    background: #32323a;
+    top: 0px;
+    left: 0px;
+    width: 20vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+  }
+  .n{
+    position: fixed;
+    display: flex;
+    top: 0px;
+    right:0px;
+    width: 20vw;
+    height: 10vh;
+    justify-content: center;
+    z-index: 30;
+  }
+  .p{
+    background: white;
+    z-index: 21;
+    width: 10vw;
+    height:0.4vh;
+    position: fixed;
+    top: 4vh;
+    border-radius: 30%;
+  }
+  .pp{
+background: white;
+    z-index: 21;
+    width: 10vw;
+    height:0.4vh;
+    position: fixed;
+    top: 5vh;
+    border-radius: 30%;
+  }
+  .ppp{
+background: white;
+    z-index: 21;
+    width: 10vw;
+    height:0.4vh;
+    position: fixed;
+    top: 6vh;
+    border-radius: 30%;
+  }
+  .m{
+    position: fixed;
+    top: 0px;
+    right: -50vw;
+    height: 100vh;
+    width: 50vw;
+    background: #1d1d20;
+    transition: all 0.3s ease;
+  
+  }
+  .ll{
+    position: fixed;
+    width: 7vh;
+    background: white;
+    height: 7vh;
+    top: 20vh;
+    z-index: 100;
+    border-radius: 50%;
+  }
+  .lll{
+    position: fixed;
+    width: 7vh;
+    background: black;
+    height: 7vh;
+    top: 30vh;
+    z-index: 100;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .plus{
+    color: white;
+    position: fixed;
+    font-size: 5vh;
+  }
+  .se{
+    position: fixed;
+    width:60vw ;
+    height:5vh ;
+    left: 10vw;
+    top: 2vh;
+    background: white;
+    z-index: 30;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+  }
+  .search{
+    color: #515151;
+    font-size:3vh;
+}
+.mone{
+  position: fixed;
+  top: 20vh;
+  right: -45vw;
+  width:45vw;
+  height: 5vh;
+  background: #27272b;
+  z-index: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #414148;
+  transition: all 0.3s ease;
+}
+.mtwo{
+  position: fixed;
+  top: 40vh;
+  right: -45vw;
+  width:45vw;
+  height: 5vh;
+  background: #27272b;
+  z-index: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #414148;
+  transition: all 0.3s ease;
+}
+.mthree{
+  position: fixed;
+  top: 80vh;
+  right: -45vw;
+  width:45vw;
+  height: 5vh;
+  background: #27272b;
+  z-index: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #414148;
+  transition: all 0.3s ease;
+}
+[contenteditable="true"]{
+  outline: none;
+  border: none;
+}
+  
+  
+  
+</style>
+</head>
+<body>
+  <div id="body"></div>
+  <div class="v"></div>
+  <div class="l"> <div class="ll" id="lone"></div> <div class="lll" id="ltwo"><p class="plus">+</p></div></div>
+  <div class="n" id="nn"><div class="p"></div><div class="pp"></div><div class="ppp"></div></div>
+  <div class="m" id="mm"><div class="mone" id="one">главная</div><div class="mtwo" id="two">перейти в чат</div><div class="mthree" id="three">о нас</div></div>
+  <div class="se"><p class="search" id="contact" contenteditable="true">Поиск контактов</p></div>
+  <script src="main.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
