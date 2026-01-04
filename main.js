@@ -232,6 +232,17 @@ let old = JSON.parse(localStorage.times||'{}');
 old[page]=(old[page]||0) + sec;
 localStorage.times=JSON.stringify(old);
 console.log(localStorage.times);
+
+
+if (typeof gtag !== 'undefined') {
+      gtag('event', 'time_spent', {
+        'page': page,
+        'seconds': sec,
+        'total_time': old[page]
+      });
+    }
+    
+    
 page = document.title;
 start = Date.now();
 }
