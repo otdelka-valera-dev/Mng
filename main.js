@@ -233,14 +233,20 @@ old[page]=(old[page]||0) + sec;
 localStorage.times=JSON.stringify(old);
 console.log(localStorage.times);
 
-
 if (typeof gtag !== 'undefined') {
-      gtag('event', 'time_spent', {
-        'page': page,
-        'seconds': sec,
-        'total_time': old[page]
-      });
-    }
+  gtag('event', 'time_spent', {
+    'page': page,
+    'seconds': sec,
+    'total_time': old[page],
+    'engagement_time_msec': sec * 1000, 
+    'page_title': document.title,
+    'page_location': window.location.href
+  });
+}
+    
+    
+    
+    
     
     
 page = document.title;
