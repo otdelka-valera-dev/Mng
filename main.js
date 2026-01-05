@@ -166,14 +166,11 @@ let c = 1;
     <title>о нас</title>
     <style>
     .vid{
-    background: white;
     position: absolute;
     right: 10px;
     top: 70px;
-    width: 100px;
-    height: 60px;
-    display: flex;
-    align-content:center;
+    width: 200px;
+    height: 200px;
     }
     .kg{
     font-size:1rem;
@@ -187,8 +184,7 @@ let c = 1;
     right:10px;
     }
     </style>
-    <div class="vid"><h1 class="kg">2нгн5</h1>
-    <p class="gk">4лприлг 6 ашикгр 3 плпон 11 оргл5 +%×-</p></div>
+    <img src="pu.jpg" class="vid">
     
     `
     };
